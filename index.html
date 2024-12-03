@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Football Match</title>
+        <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="football.css">
+        <script src="football.js"></script>
+    </head>
+
+    <body>
+        <div id="overlay" class="overlay">
+            <div id="end-popup" class="popup">
+                <div class="popup-content">
+                    <h2>Game Over!</h2>
+                    <p>Your Score: <span id="finalscore"></span></p>
+                    <button id="play-again-button" onclick="playAgain()">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <div id="game-container">
+            <div id="sidebar">
+                <div id="moves-container">
+                    <h1>Moves: 
+                        <span id="moves">30</span>
+                    </h1>
+                </div>
+                <div id="score-container">
+                    <h1>Score: <span id="score"></span></h1>
+                </div>
+                <div id="leaderboard">
+                    <h1>High Score
+                        <span id="scores">
+                            <h4>
+                                <span id="high-score"></span>
+                            </h4>
+                        </span>
+                    </h1>
+                </div>
+                
+            </div>
+            <div id="board"></div>
+        </div>
+    </body>
+</html>
